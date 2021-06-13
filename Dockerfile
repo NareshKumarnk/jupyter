@@ -5,7 +5,8 @@ WORKDIR ${APP_HOME}
 
 COPY . ./
 
-RUN pip install pip pipenv --upgrade
-RUN pipenv install --skip-lock --system --dev
+#RUN pip install pip pipenv --upgrade
+#RUN pipenv install --skip-lock --system --dev
+RUN pip3 install jupyter
 
-CMD ["./scripts/entrypoint.sh"]
+CMD ["jupyter", "notebook, "--port=8888", "--no-browser","--ip=0.0.0.0","--allow-root"]
