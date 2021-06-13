@@ -7,7 +7,7 @@ RUN mkdir src
 WORKDIR src/
 COPY . .
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirement.txt
 RUN pip3 install jupyter
 
 ENV TINI_VERSION v0.6.0
