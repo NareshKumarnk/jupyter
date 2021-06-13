@@ -1,0 +1,14 @@
+passlib
+aniso8601
+Click
+Flask
+Flask-RESTful
+itsdangerous
+Jinja2
+MarkupSafe
+marshmallow
+pymongo
+pytz
+six
+webargs
+Werkzeug
